@@ -10,7 +10,7 @@ def findPath(root, path, n):
 	if root.data == n:
 		return True
 
-	if((root.left != None and findPath(root.left, path, n)) or (root.right != None and findPath root.right, path, n)):
+	if ((root.left != None and findPath(root.left, path, n)) or (root.right != None and findPath(root.right, path, n))):
 		return True
 
 	path.pop()
